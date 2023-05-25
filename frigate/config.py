@@ -102,7 +102,9 @@ class UIConfig(FrigateBaseModel):
 
 
 class TelemetryConfig(FrigateBaseModel):
-    network_bandwidth: bool = Field(default=False, title="Enable network bandwidth for ffmpeg processes.")
+    network_bandwidth: bool = Field(
+        default=False, title="Enable network bandwidth for ffmpeg processes."
+    )
     version_check: bool = Field(default=True, title="Enable latest version check.")
 
 
